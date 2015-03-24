@@ -1,0 +1,6 @@
+@mixin opacity ($opacity) {
+  opacity: $opacity;
+  @include ie8-and-lower {
+    filter: alpha(opacity=$opacity * 100);
+  }
+}

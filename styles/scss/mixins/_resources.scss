@@ -1,0 +1,29 @@
+@mixin mediaAll {
+  @if $all {
+    @content;
+  }
+}
+
+@mixin mediaDesktop {
+  @if $desktop {
+    @content;
+  }
+}
+
+@mixin mediaTablet {
+  @if $tablet {
+    @content;
+  }
+}
+
+@mixin mediaMobile {
+  @if $mobile {
+    @content;
+  }
+}
+
+@mixin ie8-and-lower {
+  @if $lteie8 {
+    @content;
+  }
+}
