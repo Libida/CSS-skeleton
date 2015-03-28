@@ -1,5 +1,8 @@
 @mixin mediaAll {
   @if $all {
+    /***********
+    ******  file: resources.scss, mixin mediaAll. ie: #{$lteie8}, all: #{$all}
+    ***********/
     @content;
   }
 }
@@ -24,6 +27,12 @@
 
 @mixin ie8-and-lower {
   @if $lteie8 {
+    @content;
+  }
+}
+
+@mixin not-ie8-and-lower {
+  @if $lteie8 == false {
     @content;
   }
 }

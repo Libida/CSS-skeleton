@@ -1,4 +1,7 @@
+/***********
+******  file: resources.scss, mixin mediaAll. ie: false, all: true
+***********/
 .color-change {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: bold;
   opacity: 0.7; }

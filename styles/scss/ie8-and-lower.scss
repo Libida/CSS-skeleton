@@ -1,4 +1,12 @@
-$all: false;
+/*
+Stylesheet only for Internet Explorer 8 and lower versions.
+Includes not only IE8- specific styles but also all global styles and styles from desktop view
+(because those browser's versions don't support media queries).
+
+Stylesheet Limits in Internet Explorer:
+* A sheet may contain up to 4095 rules
+*/
+$all: true;
 $desktop: true;
 $tablet: false;
 $mobile: false;

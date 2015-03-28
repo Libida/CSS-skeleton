@@ -1,5 +1,36 @@
+@mixin px-rem-property($property, $values...) {
+  $max: length($values);
+  $pxValues: '';
+  $remValues: '';
+  @for $i from 1 through $max {
+    $value: nth($values, $i);
+    $valuePx: nth($values, $i)/0.1;
+    @if $value == 0 {
+      $pxValues: #{$pxValues + $valuePx};
+      $remValues: #{$remValues + $value};
+    } @else {
+      $pxValues: #{$pxValues + $valuePx}px;
+      $remValues: #{$remValues + $value}rem;
+    }
+
+    @if $i < $max {
+      $pxValues: #{$pxValues + " "};
+      $remValues: #{$remValues + " "};
+    }
+  }
+
+  @include not-ie8-and-lower{
+    #{$property}: $remValues;
+  }
+  @include ie8-and-lower {
+    #{$property}: $pxValues;
+  }
+}
+
 @mixin opacity ($opacity) {
-  opacity: $opacity;
+  @include not-ie8-and-lower {
+    opacity: $opacity;
+  }
   @include ie8-and-lower {
     filter: alpha(opacity=$opacity * 100);
   }

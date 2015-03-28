@@ -1,6 +1,6 @@
 @include mediaAll {
   .color-change {
-    font-size: 16px;
+    @include px-rem-property(font-size, 1.6);
     font-weight: bold;
     @include opacity(0.7);
   }
