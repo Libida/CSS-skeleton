@@ -9,8 +9,69 @@ Stylesheet Limits in Internet Explorer:
 /***********
 ******  file: resources.scss, mixin mediaAll. ie: true, all: true
 ***********/
+html {
+  font-size: 10px;
+  /* Sets up the Base 10 stuff, IE 11 calculates wrong font sizes when html font-size is set in %*/
+  background: -webkit-linear-gradient(90deg, #ffb347 #ffcc33, 10% 90%);
+  /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(90deg, #ffb347 #ffcc33, 10% 90%);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(90deg, #ffb347 #ffcc33, 10% 90%);
+  /* IE10 */
+  background: -o-linear-gradient(90deg, #ffb347 #ffcc33, 10% 90%);
+  /* Opera 11.10+ */
+  background: linear-gradient(90deg, #ffb347 #ffcc33, 10% 90%);
+  /* W3C */ }
+
+body {
+  margin: 0;
+  font-family: georgia, serif;
+  height: 100%; }
+
+/***********
+******  file: resources.scss, mixin mediaAll. ie: true, all: true
+***********/
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+/***********
+******  file: resources.scss, mixin mediaAll. ie: true, all: true
+***********/
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-position: inside; }
+
+/***********
+******  file: resources.scss, mixin mediaAll. ie: true, all: true
+***********/
+header {
+  background-color: white;
+  height: 100px; }
+
+/***********
+******  file: resources.scss, mixin mediaAll. ie: true, all: true
+***********/
 .color-change {
-  font-size: 16px;
+  font-size: 30px;
   font-weight: bold;
   filter: alpha(opacity=70); }
 

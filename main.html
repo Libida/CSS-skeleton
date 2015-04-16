@@ -3,24 +3,31 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>CSS skeleton</title>
     <link rel="stylesheet" type="text/css" href="styles/css/all.css" media="all">
     <link rel="stylesheet" type="text/css" href="styles/css/desktop.css" media="screen and (min-width: 1024px)"/>
     <link rel="stylesheet" type="text/css" href="styles/css/tablet.css" media="screen and (min-width: 768px) and (max-width: 1023px)"/>
     <link rel="stylesheet" type="text/css" href="styles/css/mobile.css" media="screen and (max-width: 767px)"/>
+    <link rel="stylesheet" type="text/css" href="styles/css/print.css" media="print"/>
     <!--[if lte IE 8]>
     <link rel="stylesheet" type="text/css" href="styles/css/ie8-and-lower.css" />
     <![endif]-->
 </head>
 <body>
-<p class="color-change">
-    This text changes color for different media queries:
-</p>
-<ul class="color-change">
-    <li>Orange for desktop view </li>
-    <li>Blue for tablet view </li>
-    <li>Green for mobile view </li>
-</ul>
+
+    <header>
+        Sass browser/media skeleton
+    </header>
+    <p class="color-change text-center">
+        Color of this text is changing for different media queries:
+    </p>
+    <ul class="color-change text-center">
+        <li>Orange for desktop view </li>
+        <li>Blue for tablet view </li>
+        <li>Green for mobile view </li>
+        <li>Black for print view </li>
+    </ul>
 
 </body>
 </html>

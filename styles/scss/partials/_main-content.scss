@@ -1,7 +1,14 @@
 
 //@import "../libs/reset";
 
+@import "../common/variables";
+
 @import "../mixins/_resources";
 @import "../mixins/decoration";
 
+@import "../common/base";
+@import "../common/utility";
+@import "../common/type";
+
+@import "../blocks/header";
 @import "../blocks/color-change";

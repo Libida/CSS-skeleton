@@ -25,6 +25,12 @@
   }
 }
 
+@mixin mediaPrint {
+  @if $print {
+    @content;
+  }
+}
+
 @mixin ie8-and-lower {
   @if $lteie8 {
     @content;
